@@ -1,0 +1,263 @@
+/*外侧居中DIV*/
+article{
+	width:750px;
+	margin: 0 auto;
+}
+#outer{
+	width:750px;
+	height:1200px;
+	background:url(../images/banner.jpg)no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+
+/*居右虚线圆*/
+#outer_circle{
+	width: 733px;
+	height: 734px;
+	position: absolute;
+	top: 142px;
+	right:0px;
+	border:1px dashed #ef854b;
+	border-radius: 50%;
+}
+/*居左虚线圆*/
+#center_circle{
+	width: 726px;
+	height: 720px;
+	position: absolute;
+	top: 150px;
+	left:0px;
+	border:1px dashed #ef854b;
+	border-radius: 50%;
+}
+
+/*上侧实心圆*/
+#filled-circle1{
+	width: 17px;
+	height: 17px;
+	position:absolute;
+	top:170px;
+	left:214px;
+	background-color: #f57129;
+	border-radius: 50%;
+}
+/*下侧实心圆*/
+#filled-circle2{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	bottom: 345px;
+	left:230px;
+	background-color: #f57129;
+	border-radius: 50%;
+}
+
+/*上部主界面*/
+#outerDiv{
+	width: 674px;
+	height: 674px;
+	background-color: rgba(107,107,107,0.6);
+	position: absolute;
+	top:170px;
+	left:40px;
+	border-radius: 50%;
+}
+/*外貌协会logo*/
+#outerDiv img{
+	position: absolute;
+	width: 139px;
+	height: 47px;
+	top:22px;
+	left:268px;
+}
+
+/*上部主界面*/
+#innerDiv{
+	width:378px;
+	height:505px;
+	position:absolute;
+	top:86px;
+	left:148px;
+}
+/*四个输入框*/
+#innerDiv div{
+	width: 378px;
+	height: 72px;
+    position: absolute;
+    border-radius: 7px;
+    border-width: 4px;
+    border-style: solid;
+}
+#one{
+	border-color: #cccccc;
+}
+#two{
+	border-color: #cccccc;
+	top:106px;
+}
+#two p input{
+	width: 120px;
+}
+#three{
+	border-color:#ffffff;
+	top:210px;
+}
+#four{
+	border-color:#ffffff;
+	top:316px;
+}
+#five{
+	border-color:#ffffff;
+	top:425px;
+}
+
+/*上面四个div内部p标签里的提示*/
+#innerDiv p{
+	position: absolute;
+	top:-5px;
+	left: 15px;
+	font-size: 23px;
+	color:#fffdfe;
+}
+
+/*手机号和验证码的输入框的属性*/
+#innerDiv .aaa{
+	width:259px;
+	height: 63px;
+	top:-15px;
+}
+
+/*获取验证码*/
+#innerDiv a{
+	color:#f6722a;
+	text-decoration: none;
+	font-size: 23px;
+	margin-top:-1px;
+	margin-left: 130px;
+}
+
+
+/*密码设置的输入框的属性*/
+#innerDiv .bbb{
+	width:234px;
+	height: 64px;
+	top:-15px;
+}
+
+/*所有input输入框的属性*/
+#innerDiv p input{
+	position: absolute;
+	border:none;
+	background: none;
+	font-size: 23px;
+	color:#fffdfe;
+}
+
+/*个人或企业的下拉框*/
+#five select{
+	background: none;
+	width:378px;
+	height:72px;
+	font-size:23px;
+	color:#fffdfe;
+	border: none;
+}
+
+/*对勾图片*/
+/*ul li{
+	list-style: none;
+}
+ul li img{
+	width: 20px;
+	height: 20px;
+	position:absolute;
+	top:2px;
+	left:1px;
+}*/
+
+
+#agree{
+	height: 322px;
+	width:748px;
+	border:1px solid black;
+	position: absolute;
+	top:879px;
+	border: none;
+}
+#agree pre div{
+	font-size:21px;
+	color:#fffdfe;
+	float:right;
+	margin-top: -53px;
+	display: inline;
+	font-weight: bold;
+}
+
+/*我已阅读并同意网络用户协议*/
+#agree pre.check span{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border:5px solid #f6722a;
+	margin-left: 24px;
+	margin-top: 10px;
+}
+
+#agree pre.check{
+	width: 320px;
+	height: 30px;
+	/*margin-top:15px;*/
+	margin-left:220px;
+	border: none;
+	margin-top: 25px;
+}
+
+/*复选框的span标签*/
+div.check span{
+	width: 22px;
+	height: 22px;
+	border: 3px solid #f57129;
+	position:absolute;
+	top:24px;
+	display: inline-block;
+}
+
+
+
+/*注册按钮*/
+#reg{
+	width: 190px;
+    height: 77px;
+    background-color: #f57129;
+    color:#fffdfe;
+    border-radius: 6px;
+    font-size: 23px;
+    margin-top: 80px;
+    margin-left: 281px;
+}
+
+
+/*两个超链接*/
+#agree div a{
+	font-size: 21px;
+	color:#e0e0e0;
+	text-decoration: none;
+	position: absolute;
+}
+
+
+#agree #catenation{
+	width: 370px;
+	height: 27px;
+	margin-top:40px;
+	margin-left: 195px;
+	border: none;
+}
+#agree #catenation1{
+	float: left;
+}
+#agree #catenation2{
+	margin-left: 286px;
+}

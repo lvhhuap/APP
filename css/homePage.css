@@ -1,0 +1,330 @@
+
+ /* 
+	首页样式表
+	@autor fengcy
+	@date  20170906
+
+ */
+
+ /*所有居中显示*/
+*{
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+}
+
+/*去掉所有li的样式*/
+ ul li{
+	list-style:none;
+}
+
+/*放置内容的整个大的div*/
+.aaa{
+	width: 750px;
+	height: 1920px;
+}
+
+/*头部主div*/
+header{
+	width: 750px;
+	height: 553px;
+	background-color: #3f3d42;
+	position: relative;
+}
+
+header .header{
+	height: 152px;
+}
+/*定位Logo*/
+header #gps{
+	margin-top: 65px;
+	margin-left: 27px;
+}
+
+/*地址下拉框*/
+#adress{
+	width: 66px;
+	height: 20px;
+	overflow: hidden;
+	margin-left: 65px;
+	margin-top: -40px;
+}
+/*三个地址li*/
+#adress li{
+	width: 69px;
+	height: 20px;
+	color:#ffffff;
+	font-size: 17px;
+}
+/*下拉图标*/
+header #dropDown{
+	position: absolute;
+	top: 65px;
+	left: 145px;
+}
+/*整个搜索框div*/
+header #search{
+	width: 470px;
+	height: 52px;
+	position: absolute;
+	top:65px;
+	left: 184px;
+	background-color: #4a4a4a;
+	border-radius: 3px;
+}
+/*input搜索框*/
+header #search input{
+	width: 410px;
+	height: 45px;
+	position: absolute;
+	top:4px;
+	background: none;
+	border: none;
+	font-size: 20px;
+	color:#ffffff;
+}
+
+/*个人中心的小图标*/
+header #search #mine{
+	position: absolute;
+	left:500px;
+}
+
+
+/*轮播图*/
+.aaa .header_nav{
+	height:400px;
+	overflow:hidden;
+}
+
+/*模特、演绎等等*/
+header .header_nav .nav_font{
+	background-color: ##3f3d42;
+	overflow: hidden;
+}
+
+/*四个选项卡li的样式*/
+header .header_nav .nav_font li{
+	float: left;
+	width: 120px;
+	height: 48px;
+	text-align: center;
+	color:#ffffff;
+	font-size: 21px;
+}
+
+/*最后一个 选项卡MORE右浮动*/
+header .header_nav .nav_font li:last-child{
+	float: right;
+	color:#767676;
+}
+/*单击class属性值为current的选项卡时的样式*/
+header .header_nav .nav_font li.current{
+	border-bottom: 4px solid #ff752b;
+	color:#ff752b;
+}
+
+/*整个放置轮播图的div*/
+.header_nav .nav_imgs{
+	height: 100%;
+	background-color: #f1f1f1;
+}
+
+/*四组轮播图*/
+.header_nav .nav_imgs .imgs{
+	width: 670px;
+	height: 315px;
+	overflow: hidden;
+}
+/*给ul给样式，保证每组的四张图片可以一行显示*/
+.header_nav .nav_imgs .imgs ul{
+	width:1000px;
+    overflow:hidden;
+    position: relative;
+    display: none;
+    left:0;
+}
+
+
+.header_nav .nav_imgs .imgs ul.current{
+	display: block;
+}
+
+/*每组图片的每一个li*/
+.header_nav .nav_imgs .imgs ul li{
+	float: left;
+	width: 193px;
+	height: 280px;
+	margin-right: 18px;
+	margin-top: 10px;
+	padding: 8px;
+}
+
+/*每一个li下的图片固定高度*/
+.header_nav .nav_imgs .imgs ul li img{
+	width: 100%;
+	height: 280px;
+}
+
+/*每组图片的第一张*/
+.header_nav .nav_imgs .imgs ul li.current{
+	border:6px solid #fe9b64;
+}
+
+/*轮播图下面的四个小div*/
+.header_nav .nav_imgs .nav{
+	width: 260px;
+	height: 100%;
+	padding-left: 28px;
+}
+.header_nav .nav_imgs .nav div{
+	width: 36px;
+	height: 6px;
+	background-color: #b2b2b2;
+	float: left;
+	margin-right:28px;
+	margin-top: 15px;
+	border-radius: 12px;
+}
+/*给第一个小div背景颜色*/
+.header_nav .nav_imgs .nav div.current{
+	background-color: #fe9963;
+}
+
+/*机构招募模块的div*/
+article .article_top{
+	width: 750px;
+	height: 720px;
+	overflow: hidden;
+}
+
+/*机构招募模块和学习娱乐模块的上部文字部分*/
+article .article_top .tabUl00,.article_bottom .tabUl00{
+	height: 90px;
+	border-top: 4px solid #ff6029;
+	border-bottom: 4px solid #f0eff5;
+}
+
+article .article_top .tabUl00 li,.article_bottom .tabUl00 li{
+	width: 166px;
+	float: left;
+	height: 90px;
+	font-size: 20px;
+	text-align: center;/*文字居中*/
+	line-height: 90px;/*垂直居中*/
+}
+/*上部文字部分第一个li给下边框*/
+article .article_top .tabUl00 li.current,.article_bottom .tabUl00 li.current{
+	border-bottom: 4px solid #ff6029;
+}
+/*上部文字部分的最后一个div右浮动*/
+article .article_top .tabUl00 li:last-child,.article_bottom .tabUl00 li:last-child{
+	float: right;
+	color:#767676;
+}
+/*隐藏后两个li对应部分的文字*/
+.article_top .tabUl01,.article_bottom .tabUl01{
+	height: 625px;
+	display: none;
+}
+.article_top .tabUl01[class*="current"],.article_bottom .tabUl01[class*="current"]{
+	display: block;
+}
+
+.article_top .tabUl01 li{
+	height: 155px;
+	border-top: 1px solid #f0eff5;
+	border-bottom: 1px solid #f0eff5;
+}
+
+/*中间文字符文位置调整*/
+.article_top .tabUl01 div{
+	float: left;
+    height: 100%;	
+}
+
+/*放置左侧图片的div*/
+.article_top .tabUl01 .left_div{
+	width: 186px;
+}
+
+/*左侧idv中的图片,转换为块级元素*/
+.article_top .tabUl01 .left_div img{
+    display: block;
+}
+
+/*中间div固定宽度*/
+.article_top .tabUl01 .center_div{
+	width: 385px;
+}
+/*中间div文字部分*/
+.article_top .tabUl01 .center_div p{
+	margin-top: 20px;
+	font-size: 23px;
+	color:#323232;
+}
+.article_top .tabUl01 .center_div p:last-child{
+	font-size: 19px;
+	color: #777777;
+}
+
+/*右侧div*/
+.article_top .tabUl01 .right_div{
+	width: 170px;
+	text-align: center;
+	font-size: 19px;
+}
+.article_top .tabUl01 .right_div p:first-child{
+	margin-top: 34px;
+	color: #777777;
+}
+.article_top .tabUl01 .right_div p:last-child{
+	margin-top: 50px;
+	color:#ff5f29;
+}
+
+/*下部分div*/
+.article_bottom{
+	width: 750px;
+	height: 530px;
+}
+.article_bottom .tabUl00{
+	border-top: none;
+}
+.article_bottom .tabUl01 li{
+	height: 100px;
+	border-bottom: 2px solid #aaaaaa;
+}
+.article_bottom .tabUl01 li p{
+	float: left;
+	height: 100px;
+	line-height: 100px;
+	color: #333333;
+	font-size: 20px
+}
+.article_bottom .tabUl01 li p:first-child{
+	width: 450px;
+	position: absolute;/*解决外边距合并问题*/
+	margin-left: 24px
+
+}
+.article_bottom .tabUl01 li p:last-child{
+	width: 155px;
+	margin-left: 488px;
+	text-align: right;
+	color: #aeaeae;
+
+}
+/*底部*/
+footer{
+	margin-top: -10px;
+	height: 110px;
+	background-color: #272727;
+}
+footer ul li{
+	float: left;
+	width: 80px;
+	line-height: 112px;
+	margin-top: 16px;
+	margin-left: 60px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, 
+		maximum-scale=1.0, user-scalable=no">
+		<title>注册界面</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		<script type="text/javascript" src="js/register.js"></script>
+	</head>
+	<body>
+		<!--外层居中div-->
+		<article>
+			
+			<div id="outer">
+				
+				<!--居右虚线圆-->
+				<div id="outer_circle"></div>
+				
+				<!--居左虚线圆-->
+				<div id="center_circle"></div>
+				
+				<!--上侧实心圆-->
+				<div id="filled-circle1"></div>
+				
+				<!--下侧实心圆-->
+				<div id="filled-circle2"></div>
+				
+				
+				<div id="outerDiv">
+					
+					<!--外贸协会logo-->
+					<img src="images/logo.png">
+					
+					<!--上部主界面-->
+				    <form action="test.html" method="get">
+				    	
+					<div id="innerDiv">
+						
+						<!--手机号-->
+					    <div id="one"><p>手机号 ：<input type="text" class="aaa"
+					    	pattern="\d{11}"></p>
+					    	
+					    </div>
+					    
+					    <!--验证码-->
+					    <div id="two">
+						    <p>验证码 ：<input type="text" readonly>
+						    <a href="javascript:void(0)" id="getYzm">获取验证码</a>	
+						    </p>
+					    </div>
+					    
+					    <!--设置密码-->
+					    <div id="three"><p>设置密码 ：<input type="password" class="bbb"
+					    pattern="[a-zA-Z]\w{5,17}">
+					    </p>
+					    	
+					    </div>
+					    
+					    <!--确认密码-->
+					    <div id="four"><p>确认密码 ：<input type="password" class="bbb"
+					    pattern="[a-zA-Z]\w{5,17}">
+					    </p>
+					    	
+					    </div>
+					    
+					    <!--个人-->
+					    <div id="five">
+					    	<select name="category">
+					    	    <option value="">个人</option>
+					    	    <option value="">学校</option>
+					    	    <option value="">企业</option>
+					        </select>
+					    </div>
+					
+					</div>
+					
+				</div>
+				
+				<!--下部界面-->
+			
+					<div id="agree">
+						
+						<pre class="check"><span  id="check"></span>  
+					    <div>我已阅读并同意用户协议</div></pre>
+					    
+						<button type="button" id="reg" class="reg">注册</button>
+				    </form>
+						<div id="catenation">
+							<a href="index.html" id="catenation1">登录账号</a>
+						    <a href="###" id="catenation2">忘记密码</a>
+						</div>
+					</div>
+					
+				</div>	
+			
+		</article>
+	</body>
+</html>
